@@ -1,0 +1,24 @@
+Proofs by Contradiction
+	Prove there are an infinite number of primes.
+		-> Take set of known primes
+		-> take x = product(known primes) + 1
+		-> prove x [if not prime] cannot be not prime (contradiction)
+		-> prove x [if prime] is larger than largest prime
+
+	The set (0,1) = {x: 0<x<1 } is uncountable
+		-> Diagonalization, show a number that cannot exist in the list
+
+	There is an uncountable number of functions from the positive integer to {0,1}
+		-> Diagonalization
+
+Countable vs finitie
+	(1,2,3) - finite
+	{1, 2, 3, ..., } - uncountable
+
+infinite - a set which has a 1 - to - 1 mapping of itself to a proper subset
+
+Proof by Induction
+	Meh
+	style matters
+		- inductive hypothesis
+		- check base case
