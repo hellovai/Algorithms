@@ -22,3 +22,6 @@ Proof by Induction
 	style matters
 		- inductive hypothesis
 		- check base case
+
+Longest Possible Subsequence
+	-> 2^n possible ones
