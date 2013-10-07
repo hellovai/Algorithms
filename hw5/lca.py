@@ -3,6 +3,9 @@
 tree = dict(); # in {child:parent}
 
 def height(x):
+	'''
+	gets the hight of node x in the tree, if x is not in tree (will return 0)
+	'''
 	h = 0
 	while x in tree and tree[x] is not None:
 		x = tree[x]
@@ -10,15 +13,22 @@ def height(x):
 	return h
 
 def LCA(x, y):
+	'''
+	return the least common ancestor of x and y in the tree
+		will return None if one does not exist
+	'''
 	hx = height(x)
 	hy = height(y)
+	# make sure hx is greater than hy to not have to worry about negatives
 	if( hx < hy ):
 		hx, hy = hy, hx
 		x, y = y, x
 	diff = hx - hy
+	# move x up to be in the same height as y
 	for _ in xrange(diff):
 		if x in tree:
 			x = tree[x]
+	# while x and y are not the same, move up the tree to check if the previous ancestor is common
 	while x in tree and y in tree:
 		if x is y:
 			return x
