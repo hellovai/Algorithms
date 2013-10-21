@@ -1,0 +1,16 @@
+Vaibhav Gupta
+euler path
+
+did problem 1
+
+to run
+
+`python eulerPath.py < inputfile`
+
+will write to output.txt
+
+input format
+=====
+index (adjacency list, separated by commas, no space, in parentheses)
+
+sample input file is added as input.txt, and input2.txt
