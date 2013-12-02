@@ -1,0 +1,7 @@
+Vaibhav Gupta
+vg6663
+
+Runs kurskals algorithm
+
+to run do
+python mst.py input > <outputfile>
